@@ -426,8 +426,8 @@ class PSourceProjektManagerCore {
 				'total_user_groups' => $user_groups['total'],
 				'summary' => sprintf(
 					esc_html__( 'In den %s Gruppen, denen Du beigetreten bist, wurden insgesamt %s Projekte gefunden.', 'bp-projekt-manager' ),
-					'<strong>' . $total . '</strong>',
-					'<strong>' . $user_groups['total'] . '</strong>'
+					'<strong>' . $user_groups['total'] . '</strong>',
+					'<strong>' . $total . '</strong>'
 				),
 			);
 	}

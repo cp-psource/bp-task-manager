@@ -1,8 +1,10 @@
 <?php
 /**
  * Plugin Name: BuddyPress Projektmanager - Gruppenprojektmanagement
+ * Plugin URI: https://n3rds.work/piestingtal_source/bp-projektmanagement-plugin/
  * Description: Ein einfaches WordPress-Plugin zum Verwalten von Projekten und Aufgaben. Integriert in BuddyPress-Gruppen für beste Zusammenarbeit.
- * Version: 1.5.7
+ * Version: 1.5.8
+ * Requires at least: 4.9
  * Author: DerN3rd
  * Author URI: https://n3rds.work/
  * Text Domain: bp-projekt-manager
@@ -31,7 +33,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 define( 'TASK_BREAKER_PROFILER', false );
 
-define( 'TASK_BREAKER_VERSION', '1.5.7' );
+define( 'TASK_BREAKER_VERSION', '1.5.8' );
 
 define( 'TASK_BREAKER_PROJECT_LIMIT', 10 );
 
