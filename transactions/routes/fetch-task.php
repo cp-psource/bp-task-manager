@@ -2,8 +2,6 @@
 /**
  * This file is part of the PSourceProjektManager WordPress Plugin package.
  *
- * (c) Joseph G. <joseph@useissuestabinstead.com>
- *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  *
@@ -84,12 +82,11 @@ if ( 0 === $task_id ) {
 	}
 }
 
-$stats = array();
-
-if ( array_key_exists( 'stats', $task_collection ) ) {
-
-	$stats = $task_collection['stats'];
-
+if (is_array($task_collection) && array_key_exists('stats', $task_collection)) {
+    $stats = $task_collection['stats'];
+} else {
+    // Handle the case where 'stats' key doesn't exist or $task_collection is not an array.
+    $stats = array();
 }
 
 $this->task_breaker_api_message(
