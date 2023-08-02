@@ -27,6 +27,7 @@ BP Projektmanagement ist ein kleines Projektmanagement-Plugin für WordPress. Di
 = 1.5.9 = DerN3rd =
 
 * Fix: Fehler beim speichern von Aufgaben
+* Aktualisiert: PS Updater v1.1
 
 = 1.5.8 = DerN3rd =
 
