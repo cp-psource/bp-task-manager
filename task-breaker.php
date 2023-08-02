@@ -20,9 +20,11 @@
  * @link     <https://n3rds.work>
  * @since    1.0
  */
-require 'psource-plugin-update/plugin-update-checker.php';
-$MyUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://n3rds.work/wp-update-server/?action=get_metadata&slug=bp-task-manager', 
+
+require 'psource/psource-plugin-update/psource-plugin-updater.php';
+use Psource\PluginUpdateChecker\v5\PucFactory;
+$MyUpdateChecker = PucFactory::buildUpdateChecker(
+	'https://n3rds.work//wp-update-server/?action=get_metadata&slug=bp-task-manager', 
 	__FILE__, 
 	'bp-task-manager' 
 );
